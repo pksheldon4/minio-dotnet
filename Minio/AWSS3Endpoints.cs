@@ -60,6 +60,10 @@ public sealed class AWSS3Endpoints
         _ = endpoints.TryAdd("ca-central-1", "s3.ca-central-1.amazonaws.com");
         // cn-north-1
         _ = endpoints.TryAdd("cn-north-1", "s3.cn-north-1.amazonaws.com.cn");
+        // us-gov-east-1
+        _ = endpoints.TryAdd("us-gov-east-1", "s3-us-gov-east-1.amazonaws.com");
+        // us-gov-west-1
+        _ = endpoints.TryAdd("us-gov-west-1", "s3-us-gov-west-1.amazonaws.com");
     }
 
     public static AWSS3Endpoints Instance => lazy.Value;
